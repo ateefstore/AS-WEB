@@ -1,0 +1,373 @@
+Done ✅ I’ve updated memory.
+Now here is the BIG, DETAILED, MASTER PROMPT you asked for — this is the kind of prompt you can reuse anywhere (ChatGPT, Claude, Replit AI, Cursor, etc.) to build your project properly.
+
+Read it once fully. Save it. This is your blueprint.
+
+
+---
+
+🔥 MASTER PROMPT
+
+AS WEB BROWSER by ATEEF STORE
+
+(Full-Stack Proxy-Style Web App + APK Wrapper)
+
+
+---
+
+🎯 PROJECT GOAL
+
+Create a modern, fast, proxy-based web browser website named:
+
+> AS WEB BROWSER by ATEEF STORE
+
+
+
+The website should allow users to open normal and restricted websites without using a VPN, by routing requests through cloud servers (US / EU based).
+The system must be realistic, legal-aware, and proxy-based, not fake claims.
+
+
+---
+
+🧠 CORE CONCEPT (IMPORTANT)
+
+This is NOT a VPN
+
+This is a proxy / web relay browser
+
+Websites load inside the app, not in the user’s real IP
+
+Uses Cloudflare Workers / Node.js backend
+
+Optimized for speed, UI smoothness, and simplicity
+
+
+
+---
+
+🏗️ TECH STACK (REQUIRED)
+
+Backend
+
+Node.js + Express
+
+Runs on Replit
+
+Uses process.env.PORT
+
+Serves static frontend
+
+Acts as a proxy controller (basic)
+
+
+Proxy Layer
+
+Cloudflare Workers
+
+US / EU region routing
+
+Fetch-based proxy (no VPN tunneling)
+
+Fallback handling when sites block requests
+
+
+Frontend
+
+HTML5 + CSS3 + Vanilla JS
+
+No heavy frameworks
+
+Chrome-inspired UX
+
+Glassmorphism + dark theme
+
+
+Mobile
+
+Android WebView APK wrapper
+
+Loads deployed website
+
+Custom splash screen
+
+Download handling enabled
+
+
+
+---
+
+📁 REQUIRED PROJECT STRUCTURE
+
+AS-WEB-BROWSER/
+│
+├── app.js                  # Express server (ROOT)
+├── package.json            # Start + dependencies
+│
+├── public/                 # Main browser UI
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── landing/                # Marketing landing page
+│   ├── index.html
+│   └── style.css
+│
+├── worker/                 # Cloudflare Worker
+│   └── worker.js
+│
+├── android/                # APK wrapper (not used by Replit)
+│   ├── AndroidManifest.xml
+│   ├── MainActivity.java
+│   └── activity_main.xml
+
+
+---
+
+🌐 WEBSITE FEATURES (DETAILED)
+
+1️⃣ Browser Core
+
+URL bar (accepts:
+
+full URLs
+
+domain names
+
+search queries like Chrome)
+
+
+Smart auto-prefix (https://)
+
+Error handling for blocked sites
+
+
+2️⃣ Tabs System
+
+Multiple tabs (basic)
+
+New tab button
+
+Close tab option
+
+Session memory (localStorage)
+
+
+3️⃣ Download Manager
+
+Intercept downloadable files
+
+Show download progress
+
+Allow save to device (APK)
+
+Simple download list UI
+
+
+4️⃣ Ad-Block (Basic)
+
+Block:
+
+known ad scripts
+
+popups
+
+
+Lightweight filter list
+
+Not aggressive (avoid breaking sites)
+
+
+5️⃣ Speed Optimization
+
+Lazy loading
+
+Minimal JS
+
+CDN assets
+
+Fetch streaming where possible
+
+
+
+---
+
+🎨 UI / UX DESIGN (PREMIUM)
+
+Theme
+
+Dark mode default
+
+Glassmorphism panels
+
+Blur + transparency
+
+Neon accent (blue / purple)
+
+
+Layout
+
+Top bar:
+
+Logo: AS WEB BROWSER
+
+URL/Search bar
+
+
+Tab bar below
+
+Main viewport (iframe / proxy render)
+
+Bottom status bar (speed, server)
+
+
+Feel
+
+Smooth animations
+
+Fast transitions
+
+Chrome-like responsiveness
+
+Mobile-friendly
+
+
+
+---
+
+☁️ CLOUD & SERVER RULES
+
+Do NOT use Indian servers
+
+Prefer:
+
+Cloudflare (US/EU)
+
+Global CDN routing
+
+
+Graceful failure when site blocks proxy
+
+Clear message:
+“This site restricts proxy access”
+
+
+
+---
+
+📱 ANDROID APK REQUIREMENTS
+
+WebView based
+
+Loads deployed domain
+
+Java or Kotlin
+
+Permissions:
+
+Internet
+
+Storage (downloads)
+
+
+Custom app name: AS WEB BROWSER
+
+Publisher: ATEEF STORE
+
+
+
+---
+
+🔐 SECURITY & SAFETY
+
+No logging of user history
+
+No credential harvesting
+
+No fake “100% unblock” claims
+
+Clear disclaimer page
+
+Rate limiting on backend
+
+
+
+---
+
+📄 LANDING PAGE REQUIREMENTS
+
+Product introduction
+
+Feature highlights
+
+“Open Browser” CTA
+
+APK download button
+
+Branding:
+
+ATEEF STORE
+
+Clean, premium, trustworthy
+
+
+
+
+---
+
+🧪 DEVELOPMENT RULES
+
+App MUST run locally on Replit before deploy
+
+app.js and package.json MUST be in root
+
+Express MUST listen on process.env.PORT
+
+No unused duplicate files
+
+Clean folder structure
+
+
+
+---
+
+🧠 TONE & BRANDING
+
+Name always shown as: AS WEB BROWSER by ATEEF STORE
+
+Modern
+
+Premium
+
+Honest (no fake hacking claims)
+
+
+
+---
+
+🚀 END GOAL
+
+A working, deployable, proxy-based web browser:
+
+Runs on Replit
+
+Opens many restricted sites
+
+Has modern UI
+
+Has APK wrapper
+
+Can be expanded later
+
+
+
+---
+
+If you want, next I can:
+
+1️⃣ Turn this into code step-by-step
+2️⃣ Write Cloudflare Worker proxy code
+3️⃣ Design premium UI (HTML/CSS)
+4️⃣ Create Android APK step-by-step
+5️⃣ Make landing page content + design
+
+Just tell me one number.
